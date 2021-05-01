@@ -18,7 +18,7 @@ const Favorites = ({removeFavorite, getCurrentTemperature, getWeatherImage}) =>{
     const getFavoritesForecast = () =>{
         const getForcastAll = favorites.map(str =>{
             let key = str.split(':')[0];
-            return fetch(`http://dataservice.accuweather.com/currentconditions/v1/${key}?apikey=${api.key}`);
+            return fetch(`https://dataservice.accuweather.com/currentconditions/v1/${key}?apikey=${api.key}`);
         });
         Promise.all(getForcastAll).then((values) => {
             return Promise.all(

@@ -64,7 +64,7 @@ const Main = ({removeFavorite, getCurrentTemperature, getWeatherImage, DegreesIc
         getForecast(cityKey);
     }
     const getCurrentConditions = async(location) => {
-        const url = `http://dataservice.accuweather.com/currentconditions/v1/${location}?apikey=${api.key}`;
+        const url = `https://dataservice.accuweather.com/currentconditions/v1/${location}?apikey=${api.key}`;
         fetch(url)
             .then((response) => response.json())
             .then(data => {  
@@ -76,7 +76,7 @@ const Main = ({removeFavorite, getCurrentTemperature, getWeatherImage, DegreesIc
 
     }
     const getForecast = async(location) => {
-        const url = `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${location}?apikey=${api.key}&metric=${temperatureToggle}`;
+        const url = `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${location}?apikey=${api.key}&metric=${temperatureToggle}`;
         fetch(url)
             .then((response) => response.json())
             .then(data => {
@@ -86,7 +86,7 @@ const Main = ({removeFavorite, getCurrentTemperature, getWeatherImage, DegreesIc
             })
     }
     const getCity = async (val, getAllData) => {
-        const url = `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${api.key}&q=${val}`;      
+        const url = `https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${api.key}&q=${val}`;      
         fetch(url)
             .then((response) => response.json())
             .then(data => {
