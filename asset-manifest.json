@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/eitan-lavi-28-05-2021/static/css/main.02c11fb8.chunk.css",
+    "main.js": "/eitan-lavi-28-05-2021/static/js/main.d4bfeba5.chunk.js",
+    "main.js.map": "/eitan-lavi-28-05-2021/static/js/main.d4bfeba5.chunk.js.map",
+    "runtime-main.js": "/eitan-lavi-28-05-2021/static/js/runtime-main.afc472ce.js",
+    "runtime-main.js.map": "/eitan-lavi-28-05-2021/static/js/runtime-main.afc472ce.js.map",
+    "static/css/2.c797ceda.chunk.css": "/eitan-lavi-28-05-2021/static/css/2.c797ceda.chunk.css",
+    "static/js/2.98a0f370.chunk.js": "/eitan-lavi-28-05-2021/static/js/2.98a0f370.chunk.js",
+    "static/js/2.98a0f370.chunk.js.map": "/eitan-lavi-28-05-2021/static/js/2.98a0f370.chunk.js.map",
+    "index.html": "/eitan-lavi-28-05-2021/index.html",
+    "static/css/2.c797ceda.chunk.css.map": "/eitan-lavi-28-05-2021/static/css/2.c797ceda.chunk.css.map",
+    "static/css/main.02c11fb8.chunk.css.map": "/eitan-lavi-28-05-2021/static/css/main.02c11fb8.chunk.css.map",
+    "static/js/2.98a0f370.chunk.js.LICENSE.txt": "/eitan-lavi-28-05-2021/static/js/2.98a0f370.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/eitan-lavi-28-05-2021/static/media/Assistant-Regular.3040731f.ttf",
+    "static/media/notifications.css": "/eitan-lavi-28-05-2021/static/media/notification.c5d9251e.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.afc472ce.js",
+    "static/css/2.c797ceda.chunk.css",
+    "static/js/2.98a0f370.chunk.js",
+    "static/css/main.02c11fb8.chunk.css",
+    "static/js/main.d4bfeba5.chunk.js"
+  ]
+}
