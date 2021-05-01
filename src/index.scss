@@ -1,0 +1,14 @@
+@import './style/common/colors';
+@import './style/common/fonts';
+@import './style/common/mixins';
+@import './style/common/vars';
+@import './style/common/breakpoints';
+
+@import './style/components/global';
+@import './style/components/header';
+@import './style/components/main';
+@import './style/components/favorites';
+@import './style/components/forecast';
+@import './style/components/mobileMenu';
+@import './style/components/loader';
+@import './style/components/theme';

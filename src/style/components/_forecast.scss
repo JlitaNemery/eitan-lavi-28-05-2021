@@ -1,0 +1,21 @@
+.forecast{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    .box{
+        @include box-border;
+        .day{
+            font-size: 30px;
+            font-family: 'font-bold';
+            margin-bottom: 180px;
+        }
+        .temperature{
+            display: flex;
+            font-size: 20px;
+            span{
+                margin: 0 3px;
+            }
+        }
+    }
+}

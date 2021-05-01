@@ -1,0 +1,149 @@
+#main{
+    @include view-container;
+    position: relative;
+    .search-box-env{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        min-height: $search-height;
+        max-height: $search-height;
+        .search-box{
+            max-width: 300px;
+            height: 30px;
+            width: 50%;
+            border-radius: 20px;
+            form{
+                display: flex;
+                flex-direction: row-reverse;
+                background: inherit;
+                border-radius: inherit;
+                & > div{
+                    width: 100%;
+                    background: inherit;
+                    border-radius: inherit;
+                    input {
+                        all: unset;
+                        width: 100%;
+                        height: 100%;
+                        padding-left: 10px;
+                        box-sizing: border-box;
+                        background: inherit;
+                        border-radius: inherit;
+                    }
+                    & > div{
+                        background: inherit !important;
+                        border-radius: inherit !important;
+                        padding: 10px !important;
+                        .selection{
+                            &.highlight{
+                                background-color: getColor(_active);
+                            }
+                        }
+                    }
+                }
+                button.submit-search{
+                    all: unset;
+                    cursor: pointer;
+                    width: 30px;
+                    height: 30px;
+                    padding-left: 8px;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .error-env{
+                height: 23px;
+                .invalid-search{
+                    color:getColor(_text_error);
+                    display: none;
+                    text-align: center;
+                    &.on{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .content-env {
+        width: calc(100% - 30px);
+        height: calc(100% - #{$search-height} - 30px);
+        border: 1px solid black;
+        border-radius: 16px;        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:15px;
+        position: absolute;
+        top: $search-height;
+        .text-large{
+            font-size: $font-large;
+            font-family: 'font-bold';
+            @media #{$break1}{
+                font-size: 20px;
+            }
+        }
+        .top-row{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            .city{
+                display: flex;
+                height: 60px;
+                align-items: center;
+                justify-content: center;
+                .weather-image {
+                    width: 70px;
+                    height: 70px;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position-x: center;
+                }
+                .conditions {
+                    display: flex;
+                    @media #{$break1}{
+                        flex-direction: column;
+                    }
+                    .temperature{
+                        padding-right: 10px;
+                        .temperature-text{
+                            span ~ span{
+                                padding-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            .favorites-button {
+                display: flex;
+                height: 60px;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;                
+                &:hover{
+                    svg{
+                        color:getColor(_heart);
+                        transform: translateY(-2px) scale(1.2);
+                    }
+                }
+                .icon{
+                    font-size: 35px;                    
+                    &.add{
+
+                    }
+                    &.remove{
+                        svg{
+                            color:getColor(_heart);
+                        }
+                    }
+                }
+            } 
+        }       
+    }
+}

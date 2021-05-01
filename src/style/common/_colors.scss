@@ -1,0 +1,16 @@
+$colors:(
+    _header_dark:#213172,
+    _body_dark:#030e38,
+    _text_bright:#ffffff,
+    _text_error:#ff0000,
+    _active_dark:#1D3998,
+    _heart:#E01D1D,
+    _mobile_menu_light:#ffffff,
+    _header_light:#ffffff,
+    _active_light:#e9ecef
+
+);
+
+@function getColor($color-name){
+    @return map-get($colors, $color-name);
+}
