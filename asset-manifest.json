@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/eitan-lavi-28-05-2021/static/css/main.02c11fb8.chunk.css",
-    "main.js": "/eitan-lavi-28-05-2021/static/js/main.d4bfeba5.chunk.js",
-    "main.js.map": "/eitan-lavi-28-05-2021/static/js/main.d4bfeba5.chunk.js.map",
+    "main.js": "/eitan-lavi-28-05-2021/static/js/main.61af03f3.chunk.js",
+    "main.js.map": "/eitan-lavi-28-05-2021/static/js/main.61af03f3.chunk.js.map",
     "runtime-main.js": "/eitan-lavi-28-05-2021/static/js/runtime-main.afc472ce.js",
     "runtime-main.js.map": "/eitan-lavi-28-05-2021/static/js/runtime-main.afc472ce.js.map",
     "static/css/2.c797ceda.chunk.css": "/eitan-lavi-28-05-2021/static/css/2.c797ceda.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.c797ceda.chunk.css",
     "static/js/2.98a0f370.chunk.js",
     "static/css/main.02c11fb8.chunk.css",
-    "static/js/main.d4bfeba5.chunk.js"
+    "static/js/main.61af03f3.chunk.js"
   ]
 }
